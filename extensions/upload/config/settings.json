@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary", 
+    "providerOptions": {
+        "cloud_name": "ddpevlrno", 
+        "api_key": "453163536883541", 
+        "api_secret": "OAe5UYHc8oY0u80bwLSzFNNIMqI"
+    }
+}
