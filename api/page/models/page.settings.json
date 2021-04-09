@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page",
+  "info": {
+    "name": "Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "page_number": {
+      "type": "integer"
+    },
+    "image_background": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "lesson": {
+      "model": "lesson",
+      "via": "pages"
+    },
+    "sounds": {
+      "via": "page",
+      "collection": "sound"
+    }
+  }
+}

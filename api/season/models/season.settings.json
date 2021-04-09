@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "season",
+  "info": {
+    "name": "Season"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "season_name": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "season_img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "lessons": {
+      "via": "season",
+      "collection": "lesson"
+    }
+  }
+}
