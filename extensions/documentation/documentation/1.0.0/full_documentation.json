@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/09/2021 2:06:16 PM"
+    "x-generation-date": "04/13/2021 11:14:51 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4922,6 +4922,76 @@
               }
             }
           },
+          "practice_video": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5068,6 +5138,12 @@
                   "type": "string"
                 }
               },
+              "practice_video": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5102,8 +5178,11 @@
                     "type": "string"
                   }
                 },
-                "page": {
-                  "type": "string"
+                "pages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -5259,6 +5338,12 @@
                     "type": "string"
                   }
                 },
+                "practice_video": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -5388,41 +5473,44 @@
               }
             }
           },
-          "page": {
-            "required": [
-              "id",
-              "image_background"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "page_number": {
-                "type": "integer"
-              },
-              "image_background": {
-                "type": "array",
-                "items": {
+          "pages": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "image_background"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "integer"
+                },
+                "image_background": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "lesson": {
+                  "type": "string"
+                },
+                "sounds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "lesson": {
-                "type": "string"
-              },
-              "sounds": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -5440,8 +5528,11 @@
           "position_y": {
             "type": "string"
           },
-          "page": {
-            "type": "string"
+          "pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

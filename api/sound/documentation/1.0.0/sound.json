@@ -599,41 +599,44 @@
               }
             }
           },
-          "page": {
-            "required": [
-              "id",
-              "image_background"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "page_number": {
-                "type": "integer"
-              },
-              "image_background": {
-                "type": "array",
-                "items": {
+          "pages": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "image_background"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "page_number": {
+                  "type": "integer"
+                },
+                "image_background": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "lesson": {
+                  "type": "string"
+                },
+                "sounds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "lesson": {
-                "type": "string"
-              },
-              "sounds": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -651,8 +654,11 @@
           "position_y": {
             "type": "string"
           },
-          "page": {
-            "type": "string"
+          "pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

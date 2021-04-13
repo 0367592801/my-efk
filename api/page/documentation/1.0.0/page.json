@@ -622,6 +622,12 @@
                   "type": "string"
                 }
               },
+              "practice_video": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -656,8 +662,11 @@
                     "type": "string"
                   }
                 },
-                "page": {
-                  "type": "string"
+                "pages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

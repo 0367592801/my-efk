@@ -25,11 +25,11 @@
       "required": true
     },
     "lesson": {
-      "model": "lesson",
-      "via": "pages"
+      "via": "pages",
+      "model": "lesson"
     },
     "sounds": {
-      "via": "page",
+      "via": "pages",
       "collection": "sound"
     }
   }
