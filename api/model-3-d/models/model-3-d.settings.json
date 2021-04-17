@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "model_3d",
+  "info": {
+    "name": "Model 3D"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "model_name": {
+      "type": "string"
+    },
+    "model_type": {
+      "type": "string"
+    },
+    "model_source": {
+      "type": "json"
+    }
+  }
+}
