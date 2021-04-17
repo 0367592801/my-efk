@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/17/2021 10:27:07 PM"
+    "x-generation-date": "04/18/2021 12:04:45 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -23,7 +23,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:8082",
+      "url": "http://localhost:1337",
       "description": "Development server"
     },
     {
@@ -608,7 +608,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "parameters": [
           {
@@ -800,7 +800,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "requestBody": {
           "description": "",
@@ -808,7 +808,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewModel-3-d"
+                "$ref": "#/components/schemas/NewModel3d"
               }
             }
           }
@@ -867,7 +867,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "parameters": []
       }
@@ -924,7 +924,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "parameters": [
           {
@@ -990,7 +990,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "requestBody": {
           "description": "",
@@ -998,7 +998,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewModel-3-d"
+                "$ref": "#/components/schemas/NewModel3d"
               }
             }
           }
@@ -1064,7 +1064,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "parameters": [
           {
@@ -5554,7 +5554,7 @@
           }
         }
       },
-      "Model-3-d": {
+      "Model3d": {
         "required": [
           "id"
         ],
@@ -5568,8 +5568,8 @@
           "model_type": {
             "type": "string"
           },
-          "model_source": {
-            "type": "object"
+          "model_url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -5577,7 +5577,7 @@
           }
         }
       },
-      "NewModel-3-d": {
+      "NewModel3d": {
         "properties": {
           "model_name": {
             "type": "string"
@@ -5585,8 +5585,8 @@
           "model_type": {
             "type": "string"
           },
-          "model_source": {
-            "type": "object"
+          "model_url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6502,6 +6502,9 @@
   "tags": [
     {
       "name": "Lesson"
+    },
+    {
+      "name": "Model3d"
     },
     {
       "name": "Page"

@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewModel-3-d"
+                "$ref": "#/components/schemas/NewModel3d"
               }
             }
           }
@@ -311,7 +311,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "parameters": []
       }
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewModel-3-d"
+                "$ref": "#/components/schemas/NewModel3d"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Model-3-d"
+          "Model3d"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Model-3-d": {
+      "Model3d": {
         "required": [
           "id"
         ],
@@ -541,8 +541,8 @@
           "model_type": {
             "type": "string"
           },
-          "model_source": {
-            "type": "object"
+          "model_url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -550,7 +550,7 @@
           }
         }
       },
-      "NewModel-3-d": {
+      "NewModel3d": {
         "properties": {
           "model_name": {
             "type": "string"
@@ -558,8 +558,8 @@
           "model_type": {
             "type": "string"
           },
-          "model_source": {
-            "type": "object"
+          "model_url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -575,5 +575,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Model3d"
+    }
+  ]
 }

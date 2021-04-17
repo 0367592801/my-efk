@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/model-3-ds",
-      "handler": "model-3-d.find",
+      "handler": "model3d.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/model-3-ds/count",
-      "handler": "model-3-d.count",
+      "handler": "model3d.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/model-3-ds/:id",
-      "handler": "model-3-d.findOne",
+      "handler": "model3d.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/model-3-ds",
-      "handler": "model-3-d.create",
+      "handler": "model3d.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/model-3-ds/:id",
-      "handler": "model-3-d.update",
+      "handler": "model3d.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/model-3-ds/:id",
-      "handler": "model-3-d.delete",
+      "handler": "model3d.delete",
       "config": {
         "policies": []
       }

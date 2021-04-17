@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "model_3d",
+  "collectionName": "model3ds",
   "info": {
-    "name": "Model 3D"
+    "name": "Model3d",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,8 +17,8 @@
     "model_type": {
       "type": "string"
     },
-    "model_source": {
-      "type": "json"
+    "model_url": {
+      "type": "string"
     }
   }
 }
