@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "model3ds",
+  "info": {
+    "name": "model3d"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model_name": {
+      "type": "string",
+      "unique": true
+    },
+    "model_url": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

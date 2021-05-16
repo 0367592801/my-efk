@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question_content": {
+      "type": "text"
+    },
+    "correct_answer": {
+      "type": "string"
+    },
+    "first_answer": {
+      "type": "string"
+    },
+    "second_answer": {
+      "type": "string"
+    },
+    "third_answer": {
+      "type": "string"
+    },
+    "fourth_answer": {
+      "type": "string"
+    },
+    "test_exam": {
+      "model": "test-exam",
+      "via": "questions"
+    },
+    "question_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

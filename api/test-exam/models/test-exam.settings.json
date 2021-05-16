@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_exams",
+  "info": {
+    "name": "test_exam"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exam_name": {
+      "type": "string",
+      "unique": true
+    },
+    "exam_des": {
+      "type": "string"
+    },
+    "questions": {
+      "via": "test_exam",
+      "collection": "question"
+    },
+    "lesson": {
+      "via": "test_exam",
+      "model": "lesson"
+    }
+  }
+}

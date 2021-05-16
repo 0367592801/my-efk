@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "name": "lesson",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lesson_name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "number_page": {
+      "type": "integer"
+    },
+    "practice_video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "season": {
+      "model": "season",
+      "via": "lessons"
+    },
+    "pages": {
+      "via": "lesson",
+      "collection": "page"
+    },
+    "model_type": {
+      "type": "string"
+    },
+    "test_exam": {
+      "model": "test-exam",
+      "via": "lesson"
+    }
+  }
+}

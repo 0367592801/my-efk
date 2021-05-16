@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sounds",
+  "info": {
+    "name": "Sound"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "position_x": {
+      "type": "integer"
+    },
+    "position_y": {
+      "type": "integer"
+    },
+    "sound_file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "page": {
+      "model": "page",
+      "via": "sounds"
+    }
+  }
+}

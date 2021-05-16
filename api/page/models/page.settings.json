@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_number": {
+      "type": "integer",
+      "unique": false
+    },
+    "image_background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "lesson": {
+      "via": "pages",
+      "model": "lesson"
+    },
+    "sounds": {
+      "via": "page",
+      "collection": "sound"
+    }
+  }
+}
